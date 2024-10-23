@@ -54,7 +54,10 @@ def ocr_process(image):
             })
     
     return box_data
-
+# root hello
+@app.get("/")
+async def root():
+    return {"message": "hello"}
 # Define the /uploadImage route
 @app.post("/uploadImage")
 async def upload_image(file: UploadFile = File(...)):

@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: udoy2/ocr_server:latest  # Tagging the image
-    container_name: fastapi-container
+    image: udoy2/imagetextify:1.0.0  # Tagging the image
+    container_name: imagetextify_c
     ports:
       - "80:80"
     volumes:
