@@ -119,10 +119,11 @@ async def cleanup_queue_task():
     while True:
         await asyncio.sleep(30)
         for request_id in list(clients.keys()):
-            if clients[request_id]["status"] == "queued" and request_id not in active_sse_connections:
+            if (clients[request_id]["status"] == "queued" or clients[request_id]["status"] == "completed") and request_id not in active_sse_connections:
                 if request_id in request_queue:
                     request_queue.remove(request_id)
                 del clients[request_id]
+                print("cleared cache")
 
 @app.on_event("startup")
 async def startup_event():
