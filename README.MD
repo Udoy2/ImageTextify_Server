@@ -3,7 +3,7 @@
 
 imageTextify is a powerful and lightweight image-to-text recognition tool designed for extracting textual content from images using advanced OCR (Optical Character Recognition) technology. It leverages the power of **PaddleOCR** and **FastAPI** for efficient backend processing, making it a perfect solution for developers looking to integrate OCR capabilities into their projects.
 
-![imageTextify Banner](https://your-image-url.com/banner.png)
+![imageTextify Banner](https://github.com/Udoy2/ImageTextify_Server/blob/main/assets/banner.png)
 
 ## 🌟 Features
 
